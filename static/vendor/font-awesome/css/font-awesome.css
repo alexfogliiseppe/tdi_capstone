@@ -554,8 +554,8 @@
 .fa-bar-chart:before {
   content: "\f080";
 }
-.fa-twitter-square:before {
-  content: "\f081";
+.fa-linkedin-square:before {
+  content: "\f08c";
 }
 .fa-facebook-square:before {
   content: "\f082";
@@ -624,8 +624,8 @@
 .fa-phone-square:before {
   content: "\f098";
 }
-.fa-twitter:before {
-  content: "\f099";
+.fa-linkedin:before {
+  content: "\f0e1";
 }
 .fa-facebook-f:before,
 .fa-facebook:before {
