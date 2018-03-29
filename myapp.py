@@ -14,7 +14,7 @@ from PIL import Image
 
 
 np.random.seed(123)  # for reproducibility
-UPLOAD_FOLDER = 'static/img'
+UPLOAD_FOLDER = 'static/img/tmp'
 
 
 # WEBAPP
@@ -30,7 +30,7 @@ def upload_file():
     for file in request.files.getlist('image'):
         print('..........................................')
         filename = file.filename
-        destination =os.path.join('static', 'img', filename)
+        destination =os.path.join('static', 'img', 'tmp', filename)
         file.save(destination)
         # just one image
         print(filename)
