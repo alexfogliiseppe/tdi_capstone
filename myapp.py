@@ -10,7 +10,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import TensorBoard, EarlyStopping
 from keras import optimizers
 from time import time
-from PIL import Image
+from Pillow import Image
 
 
 np.random.seed(123)  # for reproducibility
