@@ -22,7 +22,6 @@ protobuf==3.5.2.post1
 PyYAML==3.12
 scipy==1.0.1
 six==1.11.0
-slim==0.1
 tensorboard==1.6.0
 tensorflow==1.6.0
 termcolor==1.1.0
