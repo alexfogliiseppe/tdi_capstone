@@ -3,7 +3,6 @@ astor==0.6.2
 bleach==1.5.0
 certifi==2018.1.18
 click==6.7
-Django==2.0.2
 Flask==0.12.2
 Flask-Uploads==0.2.1
 gast==0.2.0
@@ -16,6 +15,8 @@ Jinja2==2.10
 Keras==2.1.5
 Markdown==2.6.11
 MarkupSafe==1.0
+mkl-fft==1.0.0
+mkl-random==1.0.1
 numpy==1.14.2
 Pillow==5.0.0
 pipenv==11.5.2
