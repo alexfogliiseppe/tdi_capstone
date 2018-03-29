@@ -33,9 +33,9 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Find the gun</a>
             </li>
             <li class="nav-item">
@@ -45,40 +45,55 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
 
     <!-- Intro Header -->
-    <header class="masthead">
+    <header>
       <div class="intro-body">
         <div class="container">
+        </div>
+        <!-- <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Handgun detection</h1>
+            <div class="col-md-6 col-sm-6">
+              <img class="img-fluid" src="static/img/tmp/{{photo}}" alt="" style="width: 100%; height: 100%;">
             </div>
-            <div class="row">
+            <div class="col-md-6 col-sm-6 text-center">
+              <div class="container" style="color:{{col}};">
+                {{pred}}
+                <img src={{resp}}>
+              </div>
+            </div>
+            </div>
+          </div> -->
+        </div>
+    </header>
+
+    <!-- Find the gun Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Prediction</h2>
+            <div class="container">
+              <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <img class="img-fluid" src="static/img/tmp/{{photo}}" alt="" style="width: 100%; height: 100%;">
+                  <img class="img-fluid" src="static/img/tmp/{{photo}}" alt="" style="width: 100%; height: 100%;">
                 </div>
                 <div class="col-md-6 col-sm-6 text-center">
-                    <div class="container">
-                      {{pred}}
-                    </div>
+                  <div class="container" style="color:{{col}};">
+                    <!-- {{pred}} -->
+                    <img src={{resp}}>
+                  </div>
                 </div>
-            </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Afiseppe 2018</p>
-      </div>
-    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="{{url_for('static', filename="vendor/jquery/jquery.min.js")}}"></script>

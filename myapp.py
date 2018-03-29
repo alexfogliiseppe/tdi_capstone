@@ -46,11 +46,15 @@ def upload_file():
         #print("Loaded model")
         predictions = model.predict(X)
         #print(predictions)
-        #if predictions[0][0] < 0.5:
-        # color = "#246D5F"
-        # else:
-        #     color = "#FF4444"
-        return render_template('index2.html', photo = filename, pred = round(predictions[0][0] * 100, 1))#, col = color)
+        if predictions[0][0] < 0.6:
+            pred = "NO GUN"
+            color = "white"
+            image = "static/img/tenor.gif"
+        else:
+            pred = "GUN"
+            color = "red"
+            image = "static/img/giphy.gif"
+        return render_template('index2.html', photo = filename, pred = pred, col = color, resp = image)
 
 
 

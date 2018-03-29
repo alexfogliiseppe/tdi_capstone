@@ -124,7 +124,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background-image:url("../img/JAL_night_view_(9358884106).jpg");
+  background-image:url("../img/bg5.jpg");
   no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -139,11 +139,16 @@ a:focus, a:hover {
 }
 
 .masthead .intro-body .brand-heading {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .masthead .intro-body .intro-text {
   font-size: 18px;
+}
+
+.masthead .intro-body .html2 {
+  font-size: 18px;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -152,7 +157,7 @@ a:focus, a:hover {
     padding: 0;
   }
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 80px;
   }
   .masthead .intro-body .intro-text {
     font-size: 22px;
