@@ -33,19 +33,19 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Find the gun</a>
+              <a class="nav-link js-scroll-trigger" href="{{url_for("index")}}#about">Find the gun</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Model</a>
+              <a class="nav-link js-scroll-trigger" href="{{url_for("index")}}#download">Model</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="{{url_for("index")}}#contact">Contact</a>
             </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </nav>
 
@@ -79,7 +79,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6 col-sm-6">
-                  <img class="img-fluid" src="static/img/tmp/{{photo}}" alt="" style="width: 100%; height: 100%;">
+                  <img class="img-fluid" src="static/img/tmp/{{photo}}" alt="">
                 </div>
                 <div class="col-md-6 col-sm-6 text-center">
                   <div class="container" style="color:{{col}};">
@@ -101,9 +101,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="{{url_for('static', filename="vendor/jquery-easing/jquery.easing.min.js")}}"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{{url_for('static', filename="js/grayscale.min.js")}}"></script>

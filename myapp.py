@@ -49,7 +49,7 @@ def upload_file():
         if predictions[0][0] < 0.6:
             pred = "NO GUN"
             color = "white"
-            image = "static/img/tenor.gif"
+            image = "static/img/chuck.gif"
         else:
             pred = "GUN"
             color = "red"

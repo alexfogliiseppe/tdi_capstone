@@ -55,8 +55,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
-              <h1 class="brand-heading">Handgun detection</h1>
-              <!-- <p class="intro-text" align="left">A simple CNN model able to detect weapons in photos.</p> -->
+              <h1 class="brand-heading" align="right">Handgun <br>detection</h1>
+              <p class="intro-text" align="right">A simple web app able to identify weapons in photos.</p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -71,8 +71,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Test the model</h2>
-            <p>Here you can check if the model can spot a gun in your image.</p>
+            <h2>Find the gun</h2>
+            <p><i>Check if the model can spot a gun in your image.</i></p>
             <div class="col-lg-8 mx-auto">
               <form id="upload-form" action={{url_for('upload_file')}} method="POST" enctype="multipart/form-data">
                 <input type="file" name="image" accept="image/*">
@@ -88,12 +88,15 @@
     <section id="download" class="content-section">
       <div class="container">
         <div class="col-lg-10 mx-auto">
-          <h2>Is my model deeper than the sea?</h2>
-          <p>kfsdnkjfhsdkjfkjsdnkjfndsnfjdsnfknskdjfnkjdsjknknk
-            <br>- dfsldsflkjdslkfjsd
-            <br>-sdkfkjsdhfkjshdjfh
-            <br>-fksdhfkjsdhkfhskjh
-            <br>If you want more information:</p>
+          <h2>About the model</h2>
+          <br>
+          <p><i>Some details on the final structure:
+            <br>
+            <br>- Feature extraction: 5 convolutional blocks
+            <br>- Classifier: binary output
+            <br>- Presence of dropout layers to avoid overfitting
+            <br>
+            <br>If you want more information:</i></p>
           <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="btn btn-default btn-lg">CNN theory</a>
         </div>
       </div>
@@ -105,7 +108,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact me</h2>
-            <p>Feel free to contact me at the following websites!</p>
+            <p><i>Feel free to contact me at the following websites!</i></p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/alexfogliiseppe/" class="btn btn-default btn-lg">
@@ -137,7 +140,7 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>Alex Fogli Iseppe - Capstone Project at The Data Incubator Reply</p>
+        <p><i>Alex Fogli Iseppe - Capstone Project at The Data Incubator Reply</i></p>
       </div>
     </footer>
 
@@ -148,8 +151,6 @@
     <!-- Plugin JavaScript -->
     <script src="{{url_for('static', filename="vendor/jquery-easing/jquery.easing.min.js")}}"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{{url_for('static', filename="js/grayscale.min.js")}}"></script>
